@@ -1,7 +1,7 @@
 About pyimagej
 ==============
 
-Home: https://github.com/imagej/imagej.py
+Home: https://github.com/imagej/pyimagej
 
 Package license: PUBLIC-DOMAIN
 

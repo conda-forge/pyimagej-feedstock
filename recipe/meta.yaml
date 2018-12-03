@@ -1,14 +1,13 @@
 {% set name = "pyimagej" %}
-{% set pypi_name = "imagej" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: 800fbc9f0bc22d97d856daf8eef7aebee969fa8b22523aa59060eab44a305ec4
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 523dd9a9a52639e786fc8639a028131ddcbdfacf7f89609f1df96b7dd784f61c
 
 build:
   number: 1000
@@ -29,12 +28,12 @@ test:
     - imagej
 
 about:
-  home: https://github.com/imagej/imagej.py
+  home: https://github.com/imagej/pyimagej
   license: PUBLIC-DOMAIN
   license_family: PUBLIC-DOMAIN
   summary: 'Supercharged Java access from Python.'
-  doc_url: https://github.com/imagej/imagej.py
-  dev_url: https://github.com/imagej/imagej.py
+  doc_url: https://github.com/imagej/pyimagej
+  dev_url: https://github.com/imagej/pyimagej
 
 extra:
   recipe-maintainers:
