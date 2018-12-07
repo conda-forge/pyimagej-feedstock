@@ -10,7 +10,7 @@ source:
   sha256: 523dd9a9a52639e786fc8639a028131ddcbdfacf7f89609f1df96b7dd784f61c
 
 build:
-  number: 1000
+  number: 1001
   script: "{{ PYTHON }} -m pip install . -vvv  --no-deps"
   skip: True  # [py2k]
 
@@ -22,6 +22,7 @@ requirements:
     - python
     - pyjnius
     - imglyb
+    - matplotlib
 
 test:
   imports:
