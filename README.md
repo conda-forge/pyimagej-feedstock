@@ -3,11 +3,11 @@ About pyimagej
 
 Home: https://github.com/imagej/pyimagej
 
-Package license: PUBLIC-DOMAIN
+Package license: Apache 2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Supercharged Java access from Python.
+Summary: A python wrapper for ImageJ.
 
 
 
