@@ -30,9 +30,9 @@ test:
 
 about:
   home: https://github.com/imagej/pyimagej
-  license: PUBLIC-DOMAIN
-  license_family: PUBLIC-DOMAIN
-  summary: 'Supercharged Java access from Python.'
+  license: Apache 2.0
+  license_family: Apache 2.0
+  summary: 'The Python wrapper for ImageJ.'
   doc_url: https://github.com/imagej/pyimagej
   dev_url: https://github.com/imagej/pyimagej
 
