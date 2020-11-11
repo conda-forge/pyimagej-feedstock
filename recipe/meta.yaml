@@ -12,17 +12,22 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . -vvv  --no-deps"
-  skip: True  # [py2k]
+  noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - pyjnius
     - imglyb
     - matplotlib
+    - numpy
+    - xarray
+    - pillow
+    - scyjava
+    - requests
 
 test:
   imports:
