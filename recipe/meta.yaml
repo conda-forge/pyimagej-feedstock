@@ -1,5 +1,5 @@
 {% set name = "pyimagej" %}
-{% set version = "0.5.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8774772b5d5c8189e8ba6a217713f10ff3a5815e7005ee0933822f52650243d0
+  sha256: 7cc91135a0f69d97e4c7aab27d5d2f75c4bd8c74f4e33e1df30d94e107b712ec
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv  --no-deps"
-  skip: True  # [py2k]
+  script: {{ PYTHON }} -m pip install . -vvv  --no-deps
+  skip: true  # [py2k]
 
 requirements:
   host:
@@ -20,9 +20,12 @@ requirements:
     - pip
   run:
     - python
-    - pyjnius
     - imglyb
-    - matplotlib
+    - jpype1
+    - matplotlib-base
+    - numpy
+    - scyjava
+    - xarray
 
 test:
   imports:
@@ -32,11 +35,12 @@ about:
   home: https://github.com/imagej/pyimagej
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: 'The Python wrapper for ImageJ.'
+  summary: The Python wrapper for ImageJ.
   doc_url: https://github.com/imagej/pyimagej
   dev_url: https://github.com/imagej/pyimagej
 
 extra:
   recipe-maintainers:
     - ctrueden
-    - hadim
+    - elevans
+    - hinerm
