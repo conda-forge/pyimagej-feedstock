@@ -194,5 +194,6 @@ Feedstock Maintainers
 =====================
 
 * [@ctrueden](https://github.com/ctrueden/)
-* [@hadim](https://github.com/hadim/)
+* [@elevans](https://github.com/elevans/)
+* [@hinerm](https://github.com/hinerm/)
 
