@@ -20,11 +20,11 @@ requirements:
     - pip
   run:
     - python
-    - imglyb
+    - imglyb >=2.0.0
     - jpype1
     - matplotlib-base
     - numpy
-    - scyjava
+    - scyjava >=1.3.0
     - xarray
 
 test:
