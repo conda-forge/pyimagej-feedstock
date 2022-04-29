@@ -1,5 +1,5 @@
 {% set name = "pyimagej" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a043479a99ea3caf6c65e0ee3749c4eabc1482faaf40d7c412632acac8c82996
+  sha256: 9ebfd855eedaa9268ce902b53040f134c306836eb52d9ad3b7bea53ca3c25698
 
 build:
   number: 0
@@ -23,11 +23,12 @@ requirements:
     - pip
   run:
     - python
-    - imglyb >=2.0.0
-    - jpype1
+    - imglyb >=2.0.1
+    - jpype1 >=1.3.0
+    - labeling >=0.1.12
     - matplotlib-base
     - numpy
-    - scyjava >=1.5.1
+    - scyjava >=1.5.0
     - xarray
 
 test:
