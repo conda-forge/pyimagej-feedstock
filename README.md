@@ -1,11 +1,11 @@
-About pyimagej
-==============
+About pyimagej-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyimagej-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/imagej/pyimagej
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyimagej-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Python wrapper for ImageJ.
 
