@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python
-    - imglyb >=2.0.1
+    - imglyb >=2.1.0
     - jgo >=1.0.3
     - jpype1 >=1.3.0
     - labeling >=0.1.12
