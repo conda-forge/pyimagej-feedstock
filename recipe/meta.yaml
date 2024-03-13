@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vvv  --no-deps
-  skip: true  # [py2k or (py>38 and win)]
+  skip: true  # [py2k or (py<=37 and win)]
 
 requirements:
   build:
