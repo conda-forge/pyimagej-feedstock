@@ -1,5 +1,5 @@
 {% set name = "pyimagej" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cd6a1e1b0d94b55e9858257f29eea20c0ce67db897dd6624dac2cf8d9c9a4d2c
+  sha256: 28eb8108c1c094a7a68032dff4aec2513b3ae892c751298c3468498aba834372
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vvv  --no-deps
   skip: true  # [py2k or (py<=37 and win)]
 
