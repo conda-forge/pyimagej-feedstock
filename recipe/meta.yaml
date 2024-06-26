@@ -10,14 +10,11 @@ source:
   sha256: 28eb8108c1c094a7a68032dff4aec2513b3ae892c751298c3468498aba834372
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vvv  --no-deps
   skip: true  # [py2k or (py<=37 and win)]
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - pip
