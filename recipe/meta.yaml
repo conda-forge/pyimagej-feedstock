@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools >=61.2
   run:
     - python >=3.8
     - imglyb >=2.1.0
