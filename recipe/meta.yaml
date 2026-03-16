@@ -22,12 +22,12 @@ requirements:
   run:
     - python >={{ python_min }}
     - imglyb >=2.1.0
-    - jgo >=1.0.3
+    - jgo >=2.1.0
     - jpype1 >=1.4.0
     - labeling >=0.1.14
     - matplotlib-base
     - numpy
-    - scyjava >=1.12.0
+    - scyjava >=1.12.4
     - xarray
 
 test:
